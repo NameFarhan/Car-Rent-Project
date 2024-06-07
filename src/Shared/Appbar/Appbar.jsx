@@ -158,16 +158,17 @@ export default function PrimarySearchAppBar() {
   );
 
   return (
-    <AppBar
+    
+    <AppBar position="static"
       sx={{
-        // height: "124px",
         display: "flex",
         justifyContent: "center",
         backgroundColor: "#fff",
         boxShadow: "0",
-        padding: "0 2vw",
-        // zIndex: "-1",
-      }}
+        height:'124px',
+        paddingLeft:'2vw',
+        paddingRight:'2vw'
+     }}
     >
       <Toolbar>
         <Grid container>
@@ -237,7 +238,7 @@ export default function PrimarySearchAppBar() {
             <Box sx={{ display: { xs: "none", md: "flex" } }}>
               <Grid container spacing={0.5}>
                 <Grid item>
-                  <IconButton color="inherit">
+                  <IconButton>
                     <FavoriteIcon
                       sx={{
                         color: "#596780",
@@ -250,8 +251,6 @@ export default function PrimarySearchAppBar() {
                 </Grid>
                 <Grid item>
                   <IconButton
-                    aria-label="show 17 new notifications"
-                    color="inherit"
                   >
                     <Badge variant="dot" color="error">
                       <NotificationsIcon

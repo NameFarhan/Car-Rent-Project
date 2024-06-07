@@ -1,13 +1,14 @@
-import { Typography } from "@mui/material";
 import Appbar from "../../Shared/Appbar/Appbar";
 import Hero from "./HeroSection/Hero";
+import Filters from "./FilterSection/Filters";
+
 
 function Homepage() {
   return (
     <>
       <Appbar />
-      <Typography fontSize={200}>Test</Typography>
       <Hero />
+      <Filters/>
     </>
   );
 }
