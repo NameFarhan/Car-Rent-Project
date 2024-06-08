@@ -134,7 +134,7 @@ function Filters() {
             <Box
               sx={{display:'flex',alignItems:'center',justifyContent:'center', height: "100%", width: "100%" }}
             >
-              <Box sx={{width:'60px',height:'60px',border:'1px solid pink',backgroundColor:'#3563E9',borderRadius:'10px',display:'flex',alignItems:'center',justifyContent:'center'}}>
+              <Box sx={{width:'60px',height:'60px',border:'1px solid pink',backgroundColor:'#3563E9',borderRadius:'10px',display:'flex',alignItems:'center',justifyContent:'center',marginLeft:'10px'}}>
               <Box
   component="img"
   sx={{
@@ -154,7 +154,7 @@ function Filters() {
 
 
           <Grid item xs={5}>
-          <Box sx={{width:'582px',position:'relative',right:'37px',height:'136px',paddingTop:'.6vh',borderRadius:'10px',backgroundColor:'#fff',paddingLeft:'6vh'}}>
+          <Box sx={{width:'582px',position:'relative',right:'34px',height:'136px',paddingTop:'.6vh',borderRadius:'10px',backgroundColor:'#fff',paddingLeft:'6vh'}}>
               <Box sx={{display:'flex',alignItems:'center',marginTop:'3vh'}}>
               <Box
   component="img"
