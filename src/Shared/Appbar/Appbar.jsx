@@ -244,6 +244,8 @@ export default function PrimarySearchAppBar() {
                         color: "#596780",
                         border: "1px solid #C3D4E9",
                         borderRadius: "90px",
+                        width:'44px',
+                        height:'44px',
                         padding: "10px",
                       }}
                     />
@@ -259,6 +261,8 @@ export default function PrimarySearchAppBar() {
                           border: "1px solid #C3D4E9",
                           borderRadius: "90px",
                           padding: "10px",
+                          width:'44px',
+                          height:'44px',
                         }}
                       />
                     </Badge>
@@ -272,6 +276,8 @@ export default function PrimarySearchAppBar() {
                         border: "1px solid #C3D4E9",
                         borderRadius: "90px",
                         padding: "10px",
+                        width:'44px',
+                        height:'44px',
                       }}
                     />
                   </IconButton>
@@ -280,7 +286,7 @@ export default function PrimarySearchAppBar() {
                 <Grid item>
                   <IconButton>
                     <Avatar
-                      sx={{ width: "46px", height: "46px" }}
+                      sx={{ width: "44px", height: "44px" }}
                       alt="Remy Sharp"
                       src={appbarimage}
                     />
