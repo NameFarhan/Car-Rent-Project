@@ -2,7 +2,7 @@ import { Box, Grid, Typography } from "@mui/material";
 import emptyheart from "./Productsimages/emptyheart.svg";
 import heart from "./Productsimages/redheart.svg";
 
-function Singlecarproduct({ productdata }) {
+function Singlerecommendcar({ productdata }) {
   return (
     <>
       <Grid item xs={3}>
@@ -231,4 +231,4 @@ function Singlecarproduct({ productdata }) {
   );
 }
 
-export default Singlecarproduct;
+export default Singlerecommendcar

@@ -4,11 +4,10 @@ import carimage2 from './Productsimages/carimage2.svg'
 import carimage3 from './Productsimages/carimage3.svg'
 import carimage4 from './Productsimages/carimage4.svg'
 import Singlecarproduct from './Singlecarproduct'
-import heart from './Productsimages/heart.svg'
-
 import icon1 from './Productsimages/gas-station.svg'
 import icon2 from './Productsimages/Car.svg'
 import icon3 from './Productsimages/profile.svg'
+
 
 
 
@@ -25,7 +24,7 @@ const Carsdata = [
         buyerpeopleicon: icon3,
         buyerpeople:'2 People',
         price:'$99.00/',
-        dil: heart
+        dil: true
     },
 
 
@@ -39,7 +38,8 @@ const Carsdata = [
         buyerpeopleicon: icon3,
         buyerpeople:'2 People',
         price:'$80.00/',
-        discountprice:'$100.00'
+        discountprice:'$100.00',
+        dil: false
     },
 
 
@@ -53,7 +53,7 @@ const Carsdata = [
         buyerpeopleicon: icon3,
         buyerpeople:'4 People',
         price:'$96.00/',
-        dil: heart
+        dil: true
     },
 
 
@@ -67,7 +67,8 @@ const Carsdata = [
         buyerpeopleicon: icon3,
         buyerpeople:'2 People',
         price:'$80.00/',
-        discountprice:'$100.00'
+        discountprice:'$100.00',
+        dil: false
     },
 
 ]
@@ -78,7 +79,7 @@ function Carsproduct() {
   return (
     <>
            <Box sx={{padding:'0vh 4.3vw',}}>
-           <Grid container spacing={6}>
+           <Grid container spacing={4}>
     {
         Carsdata.map((data) =>{
             return(
