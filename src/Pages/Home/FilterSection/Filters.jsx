@@ -1,270 +1,432 @@
-import React from "react";
-import { Box, Typography, Grid, Divider } from "@mui/material";
+import { Box, Typography, Grid } from "@mui/material";
 import radio from "./Filterimages/radio.svg";
-import arrow from './Filterimages/arrow-down-filters.svg'
-import line from './Filterimages/line.png'
-import swap from './Filterimages/swap.svg'
+import arrow from "./Filterimages/arrow-down-filters.svg";
+import line from "./Filterimages/line.png";
+import swap from "./Filterimages/swap.svg";
 
-function Filters() {
+function Filters({ styles , anotherstyles , }) {
   return (
     <>
-      <Box
-        sx={{ paddingRight: "4.7vw", paddingLeft: "4vw", paddingTop: "2vh" }}
-      >
-        <Grid container spacing={0}>
-          <Grid  item xs={5}>
-            <Box sx={{width:'582px',height:'136px',paddingTop:'.6vh',borderRadius:'10px',backgroundColor:'#fff',paddingLeft:'6vh'}}>
-              <Box sx={{display:'flex',alignItems:'center',marginTop:'3vh'}}>
-              <Box
-  component="img"
-  sx={{
-  height: 16,
-  width: 16,
-  marginRight:'9px',
-  position:'relative',
-  bottom:'1px'
-  }}
-  alt="."
-  src={radio}
-  />
-  <Typography sx={{fontWeight:'500',fontSize:'16px'}}>Pick - Up</Typography>
-              </Box>
-
-
-              <Box sx={{width:'486px',height:'48px',display:'flex',padding:'2vh 0'}}>
-                <Box sx={{width:'126px',height:'48px'}}>
-                  <Typography sx={{fontWeight:'600',fontSize:'16px',color:'#1A202C',marginBottom:'5px'}}>Locations</Typography>
-                  <Box sx={{display:'flex',alignItems:'center'}}>
-                    <Typography sx={{color:'#90A3BF',fontSize:'12px'}}>Select your City</Typography>
-                    <Box
-  component="img"
-  sx={{
-  height: 14,
-  width: 14,
-  position:'relative',
-  left:'20px',
-  marginRight:'9px'
-  }}
-  alt="."
-  src={arrow}
-  />
-                  </Box>
-                </Box>
-                {/* Line */}
+      <Box sx={{ padding: "3vh .9vw" }}>
+        <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+          <Box
+            sx={{
+              backgroundColor: "#fff",
+              borderRadius: "10px",
+              width:styles.width,
+              height:styles.height,
+              padding: "3vh 2.5vw",
+            }}
+          >
+            <Grid container>
+              <Grid item xs={4}>
+                <Box sx={{position:styles.position,right:styles.right,}}>
                 <Box
-  component="img"
-  sx={{
-  height: 47,
-  marginLeft:'30px',
-  position:'relative',
-  right:'17px',
-  width: 2,
-  }}
-  alt="."
-  src={line}
-  />
-                <Box sx={{width:'134px',height:'48px',justifyContent:'center',alignItems:'center'}}>
-                <Typography sx={{fontWeight:'600',fontSize:'16px',color:'#1A202C',marginBottom:'5px'}}>Date</Typography>
-                  <Box sx={{display:'flex',alignItems:'center'}}>
-                    <Typography sx={{color:'#90A3BF',fontSize:'12px'}}>Select your Date</Typography>
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    marginBottom: "10px",
+                  }}
+                >
+                  <Box
+                    component="img"
+                    sx={{
+                      height: 16,
+                      width: 16,
+                    }}
+                    alt=""
+                    src={radio}
+                  />
+
+                  <Typography
+                    sx={{
+                      marginLeft: "8px",
+                      color: "#1A202C",
+                      fontSize: "16px",
+                      fontWeight: "500",
+                    }}
+                  >
+                    Pick - Up
+                  </Typography>
+                </Box>
+
+                <Typography
+                  sx={{ color: "#1A202C", fontSize: "16px", fontWeight: "600" }}
+                >
+                  Locations
+                </Typography>
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "flex-end",
+                    marginTop: "8px",
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      color: "#90A3BF",
+                      fontSize: "12px",
+                      fontWeight: "500",
+                    }}
+                  >
+                    Select your city
+                  </Typography>
+                  <Box
+                    component="img"
+                    sx={{
+                      height: 16,
+                      width: 16,
+                      marginLeft: "10px",
+                    }}
+                    alt=""
+                    src={arrow}
+                  />
+                </Box>
+
+                {/* LINE1 */}
+                <Box
+                  component="img"
+                  sx={{
+                    position:styles.position,
+                    left:styles.left,
+                    bottom: "50px",
+                    opacity: "0.5",
+                    height: 47,
+                    width: 2,
+                  }}
+                  alt=""
+                  src={line}
+                />
+                </Box>
+              </Grid>
+
+              {/* 2nd Row */}
+
+              <Grid item xs={4}>
+                <Box sx={{ padding: "4.5vh 0" ,position:styles.position,right:styles.right }}>
+                  <Typography
+                    sx={{
+                      color: "#1A202C",
+                      fontSize: "16px",
+                      fontWeight: "600",
+                    }}
+                  >
+                    Date
+                  </Typography>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      alignItems: "flex-end",
+                      marginTop: "8px",
+                    }}
+                  >
+                    <Typography
+                      sx={{
+                        color: "#90A3BF",
+                        fontSize: "12px",
+                        fontWeight: "500",
+                      }}
+                    >
+                      Select your Date
+                    </Typography>
                     <Box
-  component="img"
-  sx={{
-  height: 14,
-  width: 14,
-  marginLeft:'20px',
-  marginRight:'9px'
-  }}
-  alt="."
-  src={arrow}
-  />
+                      component="img"
+                      sx={{
+                        height: 16,
+                        width: 16,
+                        marginLeft: "10px",
+                      }}
+                      alt=""
+                      src={arrow}
+                    />
                   </Box>
                 </Box>
+
+                {/* 2nd line */}
 
                 <Box
+                  component="img"
+                  sx={{
+                    position: "relative",
+                    left: "85%",
+                    bottom: "85px",
+                    opacity: "0.5",
+                    height: 47,
+                    width: 2,
+                  }}
+                  alt=""
+                  src={line}
+                />
+              </Grid>
 
+              {/* 3rd Row */}
 
-
-// line
-
-
-  component="img"
-  sx={{
-  height: 47,
-  width: 2,
-  marginLeft:'30px',
-  position:'relative',
-  right:'17px'
-  }}
-  alt="."
-  src={line}
-  />
-
-
-                <Box sx={{width:'130px',height:'48px'}}>
-                <Typography sx={{fontWeight:'600',fontSize:'16px',color:'#1A202C',marginBottom:'5px'}}>Time</Typography>
-                  <Box sx={{display:'flex',alignItems:'center'}}>
-                    <Typography sx={{color:'#90A3BF',fontSize:'12px'}}>Select your Time</Typography>
+              <Grid item xs={4}>
+                <Box sx={{ padding: "4.5vh 0" }}>
+                  <Typography
+                    sx={{
+                      color: "#1A202C",
+                      fontSize: "16px",
+                      fontWeight: "600",
+                    }}
+                  >
+                    Time
+                  </Typography>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      alignItems: "flex-end",
+                      marginTop: "8px",
+                    }}
+                  >
+                    <Typography
+                      sx={{
+                        color: "#90A3BF",
+                        fontSize: "12px",
+                        fontWeight: "500",
+                      }}
+                    >
+                      Select your Time
+                    </Typography>
                     <Box
-  component="img"
-  sx={{
-  height: 14,
-  width: 14,
-  position:'relative',
-  left:'20px',
-  marginRight:'9px'
-  }}
-  alt="."
-  src={arrow}
-  />
+                      component="img"
+                      sx={{
+                        height: 16,
+                        width: 16,
+                        marginLeft: "10px",
+                      }}
+                      alt=""
+                      src={arrow}
+                    />
                   </Box>
                 </Box>
-              </Box>
+              </Grid>
+            </Grid>
+          </Box>
 
-            </Box>
-          </Grid>
-
-
-
-
-
-
-
-          <Grid item xs={2}>
+          {/* Center Button */}
+          <Box
+            sx={{
+              backgroundColor: "#3563E9",
+              borderRadius: "10px",
+              width: "60px",
+              height: "60px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              margin: "5vh 0",
+            }}
+          >
             <Box
-              sx={{display:'flex',alignItems:'center',justifyContent:'center', height: "100%", width: "100%" }}
-            >
-              <Box sx={{width:'60px',height:'60px',border:'1px solid pink',backgroundColor:'#3563E9',borderRadius:'10px',display:'flex',alignItems:'center',justifyContent:'center',marginLeft:'10px'}}>
-              <Box
-  component="img"
-  sx={{
-  height: 24,
-  width: 24,
-  }}
-  alt=""
-  src={swap}
-  />
-              </Box>
-            </Box>
-          </Grid>
+              component="img"
+              sx={{
+                height: 19,
+                width: 19,
+                zIndex:styles.zIndex,
+              }}
+              alt=""
+              src={swap}
+            />
+          </Box>
 
+          {/* 2nd Filter */}
 
-
-
-
-
-          <Grid item xs={5}>
-          <Box sx={{width:'582px',position:'relative',right:'34px',height:'136px',paddingTop:'.6vh',borderRadius:'10px',backgroundColor:'#fff',paddingLeft:'6vh'}}>
-              <Box sx={{display:'flex',alignItems:'center',marginTop:'3vh'}}>
-              <Box
-  component="img"
-  sx={{
-  height: 16,
-  width: 16,
-  marginRight:'9px',
-  position:'relative',
-  bottom:'1px'
-  }}
-  alt="."
-  src={radio}
-  />
-  <Typography sx={{fontWeight:'500',fontSize:'16px',color:'#1A202C'}}>Drop - Off</Typography>
-              </Box>
-
-
-              <Box sx={{width:'486px',height:'48px',display:'flex',padding:'2vh 0'}}>
-                <Box sx={{width:'126px',height:'48px'}}>
-                  <Typography sx={{fontWeight:'600',fontSize:'16px',color:'#1A202C',marginBottom:'5px'}}>Locations</Typography>
-                  <Box sx={{display:'flex',alignItems:'center'}}>
-                    <Typography sx={{color:'#90A3BF',fontSize:'12px'}}>Select your City</Typography>
-                    <Box
-  component="img"
-  sx={{
-  height: 14,
-  width: 14,
-  position:'relative',
-  left:'20px',
-  marginRight:'9px'
-  }}
-  alt="."
-  src={arrow}
-  />
-                  </Box>
-                </Box>
-                {/* Line */}
+          <Box
+            sx={{
+              padding: "3vh 1.5vw",
+              backgroundColor: "#fff",
+              borderRadius: "10px",
+              width:styles.width,
+              height:styles.height,
+              right:anotherstyles.right,
+              zIndex:anotherstyles.zIndex,
+            }}
+          >
+            <Grid container>
+              <Grid item xs={4}>
                 <Box
-  component="img"
-  sx={{
-  height: 47,
-  marginLeft:'30px',
-  position:'relative',
-  right:'17px',
-  width: 2,
-  }}
-  alt="."
-  src={line}
-  />
-                <Box sx={{width:'134px',height:'48px',justifyContent:'center',alignItems:'center'}}>
-                <Typography sx={{fontWeight:'600',fontSize:'16px',color:'#1A202C',marginBottom:'5px'}}>Date</Typography>
-                  <Box sx={{display:'flex',alignItems:'center'}}>
-                    <Typography sx={{color:'#90A3BF',fontSize:'12px'}}>Select your Date</Typography>
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    marginBottom: "10px",
+                    marginBottom: "10px",
+                  }}
+                >
+                  <Box
+                    component="img"
+                    sx={{
+                      height: 16,
+                      width: 16,
+                    }}
+                    alt=""
+                    src={radio}
+                  />
+
+                  <Typography
+                    sx={{
+                      marginLeft: "8px",
+                      color: "#1A202C",
+                      fontSize: "16px",
+                      fontWeight: "500",
+                    }}
+                  >
+                    Drop - Off
+                  </Typography>
+                </Box>
+
+                <Typography
+                  sx={{ color: "#1A202C", fontSize: "16px", fontWeight: "600" }}
+                >
+                  Locations
+                </Typography>
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "flex-end",
+                    marginTop: "8px",
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      color: "#90A3BF",
+                      fontSize: "12px",
+                      fontWeight: "500",
+                    }}
+                  >
+                    Select your city
+                  </Typography>
+                  <Box
+                    component="img"
+                    sx={{
+                      height: 16,
+                      width: 16,
+                      marginLeft: "10px",
+                    }}
+                    alt=""
+                    src={arrow}
+                  />
+                </Box>
+
+                {/* LINE1 */}
+                <Box
+                  component="img"
+                  sx={{
+                    position: "relative",
+                    left: "80%",
+                    bottom: "50px",
+                    opacity: "0.5",
+                    height: 47,
+                    width: 2,
+                  }}
+                  alt=""
+                  src={line}
+                />
+              </Grid>
+
+              {/* 2nd Row */}
+
+              <Grid item xs={4}>
+                <Box sx={{ padding: "4.5vh 0" }}>
+                  <Typography
+                    sx={{
+                      color: "#1A202C",
+                      fontSize: "16px",
+                      fontWeight: "600",
+                    }}
+                  >
+                    Date
+                  </Typography>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      alignItems: "flex-end",
+                      marginTop: "8px",
+                    }}
+                  >
+                    <Typography
+                      sx={{
+                        color: "#90A3BF",
+                        fontSize: "12px",
+                        fontWeight: "500",
+                      }}
+                    >
+                      Select your Date
+                    </Typography>
                     <Box
-  component="img"
-  sx={{
-  height: 14,
-  width: 14,
-  marginLeft:'20px',
-  marginRight:'9px'
-  }}
-  alt="."
-  src={arrow}
-  />
+                      component="img"
+                      sx={{
+                        height: 16,
+                        width: 16,
+                        marginLeft: "10px",
+                      }}
+                      alt=""
+                      src={arrow}
+                    />
                   </Box>
                 </Box>
+
+                {/* 2nd line */}
 
                 <Box
+                  component="img"
+                  sx={{
+                    position: "relative",
+                    left: "85%",
+                    bottom: "85px",
+                    opacity: "0.5",
+                    height: 47,
+                    width: 2,
+                  }}
+                  alt=""
+                  src={line}
+                />
+              </Grid>
 
+              {/* 3rd Row */}
 
-
-// line
-
-
-  component="img"
-  sx={{
-  height: 47,
-  width: 2,
-  marginLeft:'30px',
-  position:'relative',
-  right:'17px'
-  }}
-  alt="."
-  src={line}
-  />
-
-
-                <Box sx={{width:'130px',height:'48px'}}>
-                <Typography sx={{fontWeight:'600',fontSize:'16px',color:'#1A202C',marginBottom:'5px'}}>Time</Typography>
-                  <Box sx={{display:'flex',alignItems:'center'}}>
-                    <Typography sx={{color:'#90A3BF',fontSize:'12px'}}>Select your Time</Typography>
+              <Grid item xs={4}>
+                <Box sx={{ padding: "4.5vh 0" }}>
+                  <Typography
+                    sx={{
+                      color: "#1A202C",
+                      fontSize: "16px",
+                      fontWeight: "600",
+                    }}
+                  >
+                    Time
+                  </Typography>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      alignItems: "flex-end",
+                      marginTop: "8px",
+                    }}
+                  >
+                    <Typography
+                      sx={{
+                        color: "#90A3BF",
+                        fontSize: "12px",
+                        fontWeight: "500",
+                      }}
+                    >
+                      Select your Time
+                    </Typography>
                     <Box
-  component="img"
-  sx={{
-  height: 14,
-  width: 14,
-  position:'relative',
-  left:'20px',
-  marginRight:'9px'
-  }}
-  alt="."
-  src={arrow}
-  />
+                      component="img"
+                      sx={{
+                        height: 16,
+                        width: 16,
+                        marginLeft: "10px",
+                      }}
+                      alt=""
+                      src={arrow}
+                    />
                   </Box>
                 </Box>
-              </Box>
-
-            </Box>
-          </Grid>
-        </Grid>
+              </Grid>
+            </Grid>
+          </Box>
+        </Box>
       </Box>
     </>
   );
