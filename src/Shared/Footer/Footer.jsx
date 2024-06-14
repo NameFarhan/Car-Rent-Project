@@ -1,9 +1,9 @@
 import { Box, Grid, Stack, Typography } from "@mui/material";
 
 
-function Footer() {
+function Footer({styles}) {
   return (
-    <Box sx={{ width: "100%", backgroundColor: "#fff", padding: "10vh 4.4vw",marginTop:'32px' }}>
+    <Box sx={{ width: "100%", backgroundColor: "#fff", padding: "10vh 4.4vw",marginTop: styles.marginTop }}>
       <Grid container>
         <Grid item xs={6}>
           <Box sx={{ width: "100%", height: "100%" }}>

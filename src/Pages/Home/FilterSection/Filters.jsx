@@ -7,7 +7,7 @@ import swap from "./Filterimages/swap.svg";
 function Filters({ styles , anotherstyles , }) {
   return (
     <>
-      <Box sx={{ padding: "3vh .9vw" }}>
+      <Box sx={{ padding: "3vh 1.5vw" }}>
         <Box sx={{ display: "flex", justifyContent: "space-between" }}>
           <Box
             sx={{

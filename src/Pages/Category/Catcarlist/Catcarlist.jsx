@@ -145,7 +145,7 @@ function Catcarlist() {
 
   return(
 
-    <Box sx={{padding:'2vh .1vw',width:'1015px',display:'flex',justifyContent:'center',marginLeft:'25px'}}>
+    <Box sx={{padding:'1vh .1vw 0 .1vw',width:'1015px',display:'flex',justifyContent:'center',marginLeft:'25px'}}>
     <Grid container spacing={5}>
   {
 

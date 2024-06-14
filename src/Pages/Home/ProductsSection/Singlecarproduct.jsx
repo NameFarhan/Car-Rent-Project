@@ -2,14 +2,14 @@ import { Box, Grid, Typography } from "@mui/material";
 import emptyheart from "./Productsimages/emptyheart.svg";
 import heart from "./Productsimages/redheart.svg";
 
-function Singlecarproduct({ productdata }) {
+function Singlecarproduct({ productdata, styles }) {
   return (
     <>
       <Grid item xs={3}>
         <Box
           sx={{
             padding: "0vh 1.4vw",
-            width: "100%",
+            width: styles.width,
             height: "388px",
             borderRadius: "10px",
             backgroundColor: "#fff",
