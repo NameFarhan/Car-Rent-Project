@@ -140,7 +140,7 @@ function Productcars() {
             return(
          
                 <>
-                <Singlecarproduct productdata={data}/>
+      <Singlecarproduct styles={{width:'317px'}} productdata={data}/>
                 
                 </>
              

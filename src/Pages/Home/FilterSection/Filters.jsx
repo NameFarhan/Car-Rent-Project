@@ -4,7 +4,7 @@ import arrow from "./Filterimages/arrow-down-filters.svg";
 import line from "./Filterimages/line.png";
 import swap from "./Filterimages/swap.svg";
 
-function Filters({ styles , anotherstyles , }) {
+function Filters({ styles , anotherstyles }) {
   return (
     <>
       <Box sx={{ padding: "3vh 1.5vw" }}>
@@ -16,6 +16,8 @@ function Filters({ styles , anotherstyles , }) {
               width:styles.width,
               height:styles.height,
               padding: "3vh 2.5vw",
+              position:'relative',
+              left:'100px',
             }}
           >
             <Grid container>
@@ -240,6 +242,8 @@ function Filters({ styles , anotherstyles , }) {
               height:styles.height,
               right:anotherstyles.right,
               zIndex:anotherstyles.zIndex,
+              position:'relative',
+              right:'90px'
             }}
           >
             <Grid container>

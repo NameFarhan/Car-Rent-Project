@@ -2,7 +2,8 @@ import { Box, Grid, Typography } from "@mui/material";
 import emptyheart from "./Productsimages/emptyheart.svg";
 import heart from "./Productsimages/redheart.svg";
 
-function Singlecarproduct({ productdata, styles }) {
+function Singlecarproduct({ styles, productdata }) {
+  console.log(styles,'styles')
   return (
     <>
       <Grid item xs={3}>
