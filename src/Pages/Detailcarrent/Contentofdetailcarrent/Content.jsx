@@ -34,8 +34,8 @@ const Content = () => {
               <Box component={"img"} alt="" src={car} sx={{width:'380px',height:'120px',marginTop:'32px',marginLeft:'34px'}}/>
             </Box>
 
-            <Box sx={{marginTop:'24px',padding:'0 .5vw'}}>  
-                <Grid container spacing={2}>
+            <Box sx={{marginTop:'24px',padding:'0 .1vw'}}>  
+                <Grid container spacing={3}>
                     <Grid item xs={4}>
                         <Box sx={{height:'124px',width:'100%',backgroundColor:'#3563E9',padding:'5px',borderRadius:'10px',display:'flex',justifyContent:'center',alignItems:'center'}}>
                             <Box component={"img"} alt="" src={car} sx={{width:'100%'}}/>

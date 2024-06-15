@@ -5,7 +5,7 @@ import Stack from '@mui/material/Stack';
 export default function RatingSize() {
   return (
     <Stack spacing={1}>
-      <Rating name="size-small" defaultValue={4} size="small" />
+      <Rating readOnly name="size-small" defaultValue={4} size="small" />
     </Stack>
   );
 }

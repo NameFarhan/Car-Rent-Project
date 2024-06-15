@@ -5,7 +5,8 @@ import Catsidebar from '../Category/Sidebarofcategorypage/Catsidebar'
 import Footer from '../../Shared/Footer/Footer'
 import Content from './Contentofdetailcarrent/Content'
 import { Grid } from '@mui/material'
-
+import Reviews from './Reviews/Reviews'
+import Cars from './Cars/Cars'
 
 const Detailcarrent = ({}) => {
   return (
@@ -17,6 +18,13 @@ const Detailcarrent = ({}) => {
 
         
     <Content/>
+
+    <Reviews/>
+
+    <Cars styles={{marginLeft:'0',paddingRight:'25px',marginTop:'20px'}}/>
+
+
+    
     </Grid>
     </Grid>
     <Footer styles={{marginTop:'0'}}/>
