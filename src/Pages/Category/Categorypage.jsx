@@ -8,7 +8,7 @@ import Footer from '../../Shared/Footer/Footer'
 function Categorypage() {
   return (
     <>
-      <Appbar />
+      <Appbar showSearchBox={true}/>
 
       <Grid container>
         <Catsidebar />

@@ -59,7 +59,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-export default function PrimarySearchAppBar() {
+export default function PrimarySearchAppBar({showSearchBox}) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
@@ -192,6 +192,7 @@ export default function PrimarySearchAppBar() {
           </Grid>
 
           <Grid sx={{ marginTop: "9px" }} item xs={4}>
+            { showSearchBox &&
             <Search
               sx={{
                 borderRadius: "70px",
@@ -228,6 +229,7 @@ export default function PrimarySearchAppBar() {
                 src={filter}
               />
             </Search>
+            }
           </Grid>
 
           <Grid

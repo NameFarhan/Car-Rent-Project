@@ -11,7 +11,7 @@ import Cars from './Cars/Cars'
 const Detailcarrent = ({}) => {
   return (
     <>
-    <Appbar/>
+    <Appbar showSearchBox={true}/>
     <Grid container>
     <Catsidebar/>
     <Grid item xs={9}>
