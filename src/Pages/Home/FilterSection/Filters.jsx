@@ -4,7 +4,7 @@ import arrow from "./Filterimages/arrow-down-filters.svg";
 import line from "./Filterimages/line.png";
 import swap from "./Filterimages/swap.svg";
 
-function Filters({ styles , anotherstyles }) {
+function Filters({ styles , homepagestyles , categorystyles }) {
   return (
     <>
       <Box sx={{ padding: "3vh 1.5vw" }}>
@@ -16,8 +16,9 @@ function Filters({ styles , anotherstyles }) {
               width:styles.width,
               height:styles.height,
               padding: "3vh 2.5vw",
-              position:'relative',
-              left:'100px',
+              position:homepagestyles.position,
+              left:homepagestyles.left,
+              marginLeft:categorystyles.marginLeft
             }}
           >
             <Grid container>
@@ -217,6 +218,9 @@ function Filters({ styles , anotherstyles }) {
               justifyContent: "center",
               alignItems: "center",
               margin: "5vh 0",
+              zIndex:'1000',
+              position:'relative',
+              left:'2px'
             }}
           >
             <Box
@@ -240,10 +244,9 @@ function Filters({ styles , anotherstyles }) {
               borderRadius: "10px",
               width:styles.width,
               height:styles.height,
-              right:anotherstyles.right,
-              zIndex:anotherstyles.zIndex,
-              position:'relative',
-              right:'90px'
+              position:homepagestyles.position,
+              right:homepagestyles.right,
+              marginRight:categorystyles.marginRight
             }}
           >
             <Grid container>

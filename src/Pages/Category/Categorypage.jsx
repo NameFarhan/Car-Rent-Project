@@ -13,7 +13,7 @@ function Categorypage() {
       <Grid container>
         <Catsidebar />
         <Grid item xs={9}>
-            <Filters styles={{width:'486px',height:'136px',position:'relative',right:'20px',left:'118px',}} anotherstyles={{left:'5px',right:'16px'}}/>
+        <Filters styles={{width:'486px',height:'136px',position:'relative',right:'20px',left:'118px',}} anotherstyles={{left:'5px',right:'16px'}} homepagestyles={{position:'relative',left:'100px',right:'90px'}} categorystyles={{marginLeft:'-95px',marginRight:'-90px'}}/>
 
             <Catcarlist/>
             <Box sx={{display:'flex',justifyContent:'flex-end',padding:'0 1.1vw 0 0'}}>
