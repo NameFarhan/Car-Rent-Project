@@ -3,7 +3,7 @@ import Homepage from "../Pages/Home/Homepage"
 import Categorypage from "../Pages/Category/Categorypage"
 import Detailcarrent from "../Pages/Detailcarrent/Detailcarrent"
 import PaymentPage from "../Pages/Payment/PaymentPage"
-
+import Login from '../login-page/Login'
 
 
 
@@ -17,6 +17,7 @@ const Routes2 = () => {
       <Route path="/category" Component={Categorypage}/>
       <Route path="/singlecar" Component={Detailcarrent}/>
       <Route path="/billing" Component={PaymentPage}/>
+      <Route path="/login" Component={Login}/>
     </Routes>
     </BrowserRouter>
     </>

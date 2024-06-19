@@ -1,9 +1,11 @@
 import { Box, Grid, Typography } from "@mui/material";
 import emptyheart from "./Productsimages/emptyheart.svg";
 import heart from "./Productsimages/redheart.svg";
-
+import car1 from './Productsimages/carimage1.svg'
+import fuelicon from './Productsimages/gas-station.svg'
+import circle from './Productsimages/Car.svg'
+import buyerpeopleicon from './Productsimages/profile.svg'
 function Singlecarproduct({ styles, productdata }) {
-  console.log(styles,'styles')
   return (
     <>
       <Grid item xs={3}>
@@ -18,7 +20,7 @@ function Singlecarproduct({ styles, productdata }) {
         >
           <Box sx={{ display: "flex", flexDirection: "column" }}>
 {
-  productdata.dil ?   <Box
+  productdata.is_favourite   ?   <Box
               component="img"
               sx={{
                 height: 17,
@@ -50,12 +52,12 @@ function Singlecarproduct({ styles, productdata }) {
             <Typography
               sx={{ color: "#1A202C", fontSize: "20px", fontWeight: "700" }}
             >
-              {productdata.carname}
+              {productdata.name}
             </Typography>
             <Typography
               sx={{ color: "#90A3BF", fontSize: "14px", fontWeight: "700" }}
             >
-              {productdata.carcategory}
+              {productdata.category}
             </Typography>
             <Box
               component="img"
@@ -68,7 +70,7 @@ function Singlecarproduct({ styles, productdata }) {
                 width: 240,
               }}
               alt="Cars"
-              src={productdata.carimage}
+              src={car1}
             />
             <Box
               sx={{
@@ -95,7 +97,7 @@ function Singlecarproduct({ styles, productdata }) {
                         width: 20,
                       }}
                       alt="Cars"
-                      src={productdata.fuelicon}
+                      src={fuelicon}
                     />
                     <Typography
                       sx={{
@@ -104,7 +106,7 @@ function Singlecarproduct({ styles, productdata }) {
                         marginLeft: "3px",
                       }}
                     >
-                      {productdata.fuel}
+                      {productdata.tank_capacity}L
                     </Typography>
                   </Box>
                 </Grid>
@@ -126,7 +128,7 @@ function Singlecarproduct({ styles, productdata }) {
                         width: 20,
                       }}
                       alt="Cars"
-                      src={productdata.circle}
+                      src={circle}
                     />
                     <Typography
                       sx={{
@@ -155,7 +157,7 @@ function Singlecarproduct({ styles, productdata }) {
                         width: 20,
                       }}
                       alt="Cars"
-                      src={productdata.buyerpeopleicon}
+                      src={buyerpeopleicon}
                     />
                     <Typography
                       sx={{
@@ -164,7 +166,7 @@ function Singlecarproduct({ styles, productdata }) {
                         marginLeft: "3px",
                       }}
                     >
-                      {productdata.buyerpeople}
+                      {productdata.seating_capacity}People
                     </Typography>
                   </Box>
                 </Grid>
@@ -186,7 +188,7 @@ function Singlecarproduct({ styles, productdata }) {
                   marginTop: "6px",
                 }}
               >
-                {productdata.price}
+                ${productdata.rent_per_day}.00 /
                 <Typography
                   sx={{
                     color: "#90A3BF",
