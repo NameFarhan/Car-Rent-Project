@@ -73,7 +73,7 @@ function Carsproduct() {
     console.log("test");
     try {
       const response = await axios.get(
-        "https://dfd8-103-101-232-126.ngrok-free.app/api/v1/cars?per_page=10&page=1",
+        "https://9e85-103-101-232-126.ngrok-free.app/api/v1/cars?per_page=4&page=1",
         {
           headers: {
             "Content-Type": "application/json",
