@@ -70,7 +70,6 @@ function Carsproduct() {
   const [carData, setCarData] = useState([]);
 
   const getCars = async () => {
-    console.log("test");
     try {
       const response = await axios.get(
         "https://9e85-103-101-232-126.ngrok-free.app/api/v1/cars?per_page=4&page=1",
